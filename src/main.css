@@ -1,11 +1,16 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
 .more { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDEvMDIvMTLltnQyAAAB1UlEQVQ4jYWTS04bQRCGv3q0x8gMYJCwknCGLDgLVwiH4grhLFaUXdhkQ0A8pBg/FOLpnmbhMYzxRKlNS1Vdf/31V5XknGnb+eXJCBjzbzu9OLu+azu845Opysej4wHmshF4uJ2TUrb3CV0gIBAKRboC5C2vdkDE9fdty6/xDegvXz+NgDbFUejZ+PjDgExmtpxS9vYwMe5u5iyX8RRoa5Ic+C4qx9KUN1MGu4E618yqJ5axAp44KA7ZL3eYzp/HKdVIw7WK8d6BuDvcod9TQlBEIOXEdPlElSoUJabIIs4Z7h9yNDwgqOMayLXw7epHVIBggrsgspZPUBQyiCgugRQji7TAVDF1XB2TlQoOYCqovkmpopS9fcoiM3ue0rOCYf8IU8NklWxiiOQ3EPXtWagIqo6KYWYEc4IGvMViA6RrnCJKVS9B8ypRHG1YKNa0Ur+C+MPt/I2BKWVZUO4FgvQ47PcptEDF+T2Z8TiZUMWIyGtpd+Bze5VTSqP57O/4YG+AN/RXbSiPkwmL5z/be/L+mM4vT2JKeUW7EXD1erMz/Lo4u77f0K9DDhdA1XG11jh9vWBb99Z9gAg5QZ2hzpmUa0RSW4f/gqSY0s3Vz+tufEjvHS8Tg6BXC7qVbQAAAABJRU5ErkJggg==)
 			no-repeat left center; width: 17px; height: 17px; display: inline-block; float: right; cursor: pointer; }
 .less { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAK6wAACusBgosNWgAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDEvMDIvMTLltnQyAAABuklEQVQ4ja2US25TQRBFT336OSEY5ESyBfEakNiLt0AW5S2QvQQxAiZIYBwSz/yByH7dxcB2bPMME+hJS/W5fetWVUtE8K/HfzdcXfdfqsr4onuGuRz4Jrdzcg6Gg9HfQYAxAqmlSMMlQJO5/oliE4AtQLcR++btZQ+wPVsvVXbTfXFGEMyWU9rVM0yMu/Gc5bJ+DdztxWcH3otKVzbPmyq5LnwfzSgEBMxlhqJEBFWVKKUgG66rur53oH7aOeWkUlJSRCBHZracssorlLXttHpCpzonaYukjmsiivDu08daAZIJ7oLIVg9BUQgQUVwSua5Z5AWmiqnj6pisVXAAU0F1J6WK0q6e024Fs4cplbXonFxgapisk00MkdiBqDd7oSKoOiqGmZHMSZrwPRYHIMfaKaKsyhI01oni6IaFYptSyiOIT27nOwaq5FyQrUAIC/nBhK+UErRSos55z4878CrneJyTnHOvquymf3mOb+hvy/jw+QuLh5/NORkORvsGrq77dc6xpr0RcH07y3oF8G04GN0f6HdEDhdA1XG1vXb6dsAa+3Z8AREiQwkoEeQoiBzocHDkf/wnvwC5IpRVsUDNUgAAAABJRU5ErkJggg==)
 			no-repeat left center; width: 17px; height: 17px; display: inline-block; float: right; }
 a { position: relative; z-index: 20; }
 .right { text-align: right; }
-.walletarea { display: none; border: 2px solid #009900; }
-hr { margin: 20px 0; border-top: 2px dashed #008000; }
+.walletarea { display: none; border: 2px solid #668674; }
+hr { margin: 20px 0; border-top: 2px dashed #668674; }
 .keyarea { height: 110px; text-align: left; position: relative; padding: 5px; }
 .keyarea .public { float: left; }
 .keyarea .pubaddress { display: inline-block; height: 40px; padding: 0 0 0 10px; float: left; }
@@ -30,7 +35,9 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #btcaddress, #btcprivwif, #detailaddress, #detailaddresscomp, #detailprivwif, #detailprivwifcomp { font-family: monospace; font-size: 1.25em; }
 #seedpoolarea { display: none; }
 #seedpooldisplay {  font-family: monospace; font-size: 1em; width: 640px; padding: 15px 5px; word-wrap: break-word; }
-.seedpoint { width: 6px; height: 6px; display: block; border-radius: 3px; background-color: #009900; position: absolute; z-index: 10; }
+.seedpoint { width: 32px; height: 32px; display: block; background-color: rgba(0, 0, 0, 0); position: absolute; z-index: 100;
+             content: url('/./chancoin_spin_32x32.gif');
+           }
 #generate { font-family: monospace; font-size: 1.25em; height: 305px; text-align: left; position: relative; padding: 5px; border: 2px solid #009900; clear: both; }
 #generate span { padding: 5px 5px 0 5px; }
 #generatekeyinput { position: relative; z-index: 20; }
@@ -48,7 +55,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #singlesafety { text-align: left; padding: 5px; border-top: 2px solid #009900; top: -25px; position: relative; }
 
 #main { position: relative; text-align: center; margin: 0px auto; width: 808px; }
-#logo { width: 578px; height: 80px; }
+#logo { }
 		
 #paperarea { min-height: 120px; display: none; }
 #paperarea .keyarea { border: 2px solid #009900; border-top: 0; }
@@ -151,7 +158,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	.menu  
 	{
 	    text-align: left; margin: 0; padding: 0; display: block;
-	    background-color: #009900; /* # 009900 # 53c100 */
+	    background-color: #7CB77C; /* # 009900 # 53c100 */
 	    border-top-left-radius: 5px; border-top-right-radius: 5px;
 	}
 	.menu .tab 
@@ -163,14 +170,14 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	.menu .tab.selected  
 	{
 	    cursor: default; 
-	    background-color: #FFF; margin: 6px 16px; padding: 4px; border-radius: 5px; 
+	    background-color: #D3D7A6; margin: 6px 16px; padding: 4px; border-radius: 5px;
 	}
-	.menu .tab:hover  
-	{
-	    background-color: #FFF; margin: 6px 16px; padding: 4px; border-radius: 5px; 
-	}
-	.menu .tab.selected:hover { color: #000; }
-	
+	/* .menu .tab:hover   */
+	/* { */
+	/*     background-color: #709D76; margin: 6px 16px; padding: 4px; border-radius: 5px;  */
+	/* } */
+	/* .menu .tab.selected:hover { color: #709D76; } */
+
     .pagebreak { height: 50px; }
 	.commands { border-bottom: 2px solid #009900;  padding: 10px 2px; margin-bottom: 0; }
 	.commands .row { padding: 0 0; text-align: left; } 
